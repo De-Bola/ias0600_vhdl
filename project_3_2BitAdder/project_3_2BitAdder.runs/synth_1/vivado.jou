@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Oct 13 18:02:47 2021
+# Process ID: 744
+# Current directory: P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.runs/synth_1
+# Command line: vivado.exe -log TBA_Source.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TBA_Source.tcl
+# Log file: P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.runs/synth_1/TBA_Source.vds
+# Journal file: P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TBA_Source.tcl -notrace

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Oct 13 18:16:34 2021" VIVADOVERSION="2020.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="TBA_Block" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="a_1" SIGIS="undef" SIGNAME="External_Ports_a_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FA_Source_0" PORT="a_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="b_1" SIGIS="undef" SIGNAME="External_Ports_b_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FA_Source_0" PORT="b_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="carry" SIGIS="undef" SIGNAME="FA_Source_0_carry_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FA_Source_0" PORT="carry_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sum_1" SIGIS="undef" SIGNAME="FA_Source_0_sum">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FA_Source_0" PORT="sum"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="b_0" SIGIS="undef" SIGNAME="External_Ports_b_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="HA_source_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="a_0" SIGIS="undef" SIGNAME="External_Ports_a_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="HA_source_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sum_0" SIGIS="undef" SIGNAME="HA_source_0_sum">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="HA_source_0" PORT="sum"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/FA_Source_0" HWVERSION="1.0" INSTANCE="FA_Source_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FA_Source" VLNV="xilinx.com:module_ref:FA_Source:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TBA_Block_FA_Source_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a_in" SIGIS="undef" SIGNAME="External_Ports_a_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b_in" SIGIS="undef" SIGNAME="External_Ports_b_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="carry_in" SIGIS="undef" SIGNAME="HA_source_0_carry">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HA_source_0" PORT="carry"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="FA_Source_0_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sum_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="carry_out" SIGIS="undef" SIGNAME="FA_Source_0_carry_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="carry"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HA_source_0" HWVERSION="1.0" INSTANCE="HA_source_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HA_source" VLNV="xilinx.com:module_ref:HA_source:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TBA_Block_HA_source_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="External_Ports_a_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_b_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="HA_source_0_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sum_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="carry" SIGIS="undef" SIGNAME="HA_source_0_carry">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FA_Source_0" PORT="carry_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

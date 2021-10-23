@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/bd/TBA_Block/ip/TBA_Block_HA_source_0_0/sim/TBA_Block_HA_source_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TBA_Block_HA_source_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/bd/TBA_Block/ip/TBA_Block_FA_Source_0_0/sim/TBA_Block_FA_Source_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TBA_Block_FA_Source_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/bd/TBA_Block/sim/TBA_Block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TBA_Block
+INFO: [VRFC 10-2263] Analyzing Verilog file "P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TBA_Block_wrapper

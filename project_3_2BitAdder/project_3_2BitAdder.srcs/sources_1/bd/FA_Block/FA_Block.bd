@@ -1,0 +1,160 @@
+{
+    "design": {
+        "design_info": {
+            "boundary_crc": "0x8EC323468EC32346",
+            "device": "xc7a100tcsg324-1",
+            "name": "FA_Block",
+            "rev_ctrl_bd_flag": "RevCtrlBdOff",
+            "synth_flow_mode": "Hierarchical",
+            "tool_version": "2020.1",
+            "validated": "true",
+            "gen_directory": "../../../../project_3_2BitAdder.gen/sources_1/bd/FA_Block"
+        },
+        "design_tree": {
+            "HA_source_0": "",
+            "HA_source_1": "",
+            "HA_source_2": ""
+        },
+        "ports": {
+            "a": {
+                "direction": "I"
+            },
+            "b": {
+                "direction": "I"
+            },
+            "carry_in": {
+                "direction": "I"
+            },
+            "sum": {
+                "direction": "O"
+            },
+            "carry_out": {
+                "direction": "O"
+            }
+        },
+        "components": {
+            "HA_source_0": {
+                "vlnv": "xilinx.com:module_ref:HA_source:1.0",
+                "xci_name": "FA_Block_HA_source_0_0",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "HA_source",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "a": {
+                        "direction": "I"
+                    },
+                    "b": {
+                        "direction": "I"
+                    },
+                    "sum": {
+                        "direction": "O"
+                    },
+                    "carry": {
+                        "direction": "O"
+                    }
+                },
+                "xci_path": "ip/FA_Block_HA_source_0_0/FA_Block_HA_source_0_0.xci"
+            },
+            "HA_source_1": {
+                "vlnv": "xilinx.com:module_ref:HA_source:1.0",
+                "xci_name": "FA_Block_HA_source_1_0",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "HA_source",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "a": {
+                        "direction": "I"
+                    },
+                    "b": {
+                        "direction": "I"
+                    },
+                    "sum": {
+                        "direction": "O"
+                    },
+                    "carry": {
+                        "direction": "O"
+                    }
+                },
+                "xci_path": "ip/FA_Block_HA_source_1_0/FA_Block_HA_source_1_0.xci"
+            },
+            "HA_source_2": {
+                "vlnv": "xilinx.com:module_ref:HA_source:1.0",
+                "xci_name": "FA_Block_HA_source_2_0",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "HA_source",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "a": {
+                        "direction": "I"
+                    },
+                    "b": {
+                        "direction": "I"
+                    },
+                    "sum": {
+                        "direction": "O"
+                    },
+                    "carry": {
+                        "direction": "O"
+                    }
+                },
+                "xci_path": "ip/FA_Block_HA_source_2_0/FA_Block_HA_source_2_0.xci"
+            }
+        },
+        "nets": {
+            "HA_source_0_sum": {
+                "ports": [
+                    "HA_source_0/sum",
+                    "HA_source_1/a"
+                ]
+            },
+            "HA_source_0_carry": {
+                "ports": [
+                    "HA_source_0/carry",
+                    "HA_source_2/a"
+                ]
+            },
+            "HA_source_1_carry": {
+                "ports": [
+                    "HA_source_1/carry",
+                    "HA_source_2/b"
+                ]
+            },
+            "a_0_1": {
+                "ports": [
+                    "a",
+                    "HA_source_0/a"
+                ]
+            },
+            "b_0_1": {
+                "ports": [
+                    "b",
+                    "HA_source_0/b"
+                ]
+            },
+            "b_1_1": {
+                "ports": [
+                    "carry_in",
+                    "HA_source_1/b"
+                ]
+            },
+            "HA_source_1_sum": {
+                "ports": [
+                    "HA_source_1/sum",
+                    "sum"
+                ]
+            },
+            "HA_source_2_sum": {
+                "ports": [
+                    "HA_source_2/sum",
+                    "carry_out"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep 29 18:12:00 2021
+# Process ID: 9372
+# Current directory: P:/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source P:/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.sim/sim_1/behav/xsim/xsim.dir/WhenElse_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: P:/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: P:/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source P:/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.sim/sim_1/behav/xsim/xsim.dir/WhenElse_TB_behav/webtalk/xsim_webtalk.tcl -notrace

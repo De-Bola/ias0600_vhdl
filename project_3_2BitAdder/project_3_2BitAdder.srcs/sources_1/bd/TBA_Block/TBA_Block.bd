@@ -1,0 +1,42 @@
+{
+    "design": {
+        "design_info": {
+            "boundary_crc": "0x0",
+            "device": "xc7a100tcsg324-1",
+            "name": "TBA_Block",
+            "rev_ctrl_bd_flag": "RevCtrlBdOff",
+            "synth_flow_mode": "Hierarchical",
+            "tool_version": "2020.1",
+            "gen_directory": "../../../../project_3_2BitAdder.gen/sources_1/bd/TBA_Block"
+        },
+        "design_tree": {
+            "HA_source_0": ""
+        },
+        "components": {
+            "HA_source_0": {
+                "vlnv": "xilinx.com:module_ref:HA_source:1.0",
+                "xci_name": "TBA_Block_HA_source_0_0",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "HA_source",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "a": {
+                        "direction": "I"
+                    },
+                    "b": {
+                        "direction": "I"
+                    },
+                    "sum": {
+                        "direction": "O"
+                    },
+                    "carry": {
+                        "direction": "O"
+                    }
+                },
+                "xci_path": "ip/TBA_Block_HA_source_0_0/TBA_Block_HA_source_0_0.xci"
+            }
+        }
+    }
+}
