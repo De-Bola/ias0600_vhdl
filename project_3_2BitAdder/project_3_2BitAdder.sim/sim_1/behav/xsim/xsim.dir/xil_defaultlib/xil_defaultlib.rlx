@@ -1,0 +1,13 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/bd/TBA_Block/ip/TBA_Block_FA_Source_0_0/sim/TBA_Block_FA_Source_0_0.v,1634136060,verilog,,P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/bd/TBA_Block/sim/TBA_Block.v,,TBA_Block_FA_Source_0_0,,,,,,,,
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/bd/TBA_Block/ip/TBA_Block_HA_source_0_0/sim/TBA_Block_HA_source_0_0.v,1634136060,verilog,,P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/bd/TBA_Block/ip/TBA_Block_FA_Source_0_0/sim/TBA_Block_FA_Source_0_0.v,,TBA_Block_HA_source_0_0,,,,,,,,
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/bd/TBA_Block/sim/TBA_Block.v,1634137233,verilog,,P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v,,TBA_Block,,,,,,,,
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sim_1/new/TBA_tb.vhd,1634137233,vhdl,,,,tba_tb,,,,,,,,
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v,1634136060,verilog,P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sim_1/new/TBA_tb.vhd,,,\TBA_Block_wrapper\,,,,,,,,
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/imports/Lab 2 Source files/HA_source.vhd,1633532151,vhdl,P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/new/FA_Source.vhd,,,ha_source,,,,,,,,
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/new/FA_Source.vhd,1633532191,vhdl,,,,fa_source,,,,,,,,
+P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/new/TBA_Source.vhd,1634133938,vhdl,P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sim_1/new/TBA_tb.vhd,,,tba_source,,,,,,,,

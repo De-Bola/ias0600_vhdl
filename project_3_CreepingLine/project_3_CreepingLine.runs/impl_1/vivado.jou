@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 16 14:45:07 2021
+# Process ID: 12812
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_CreepingLine/project_3_CreepingLine.runs/impl_1
+# Command line: vivado.exe -log FirstStep.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FirstStep.tcl -notrace
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_CreepingLine/project_3_CreepingLine.runs/impl_1/FirstStep.vdi
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_CreepingLine/project_3_CreepingLine.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source FirstStep.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 27 18:38:17 2021
+# Process ID: 3956
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_4_Counter/project_4_Counter.runs/synth_1
+# Command line: vivado.exe -log Counter_with_Debouncer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Counter_with_Debouncer.tcl
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_4_Counter/project_4_Counter.runs/synth_1/Counter_with_Debouncer.vds
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_4_Counter/project_4_Counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Counter_with_Debouncer.tcl -notrace

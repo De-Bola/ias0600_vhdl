@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_3" LaunchPart="xc7a100tcsg324-1" LaunchTime="1636060665">
+  <File Type="PA-TCL" Name="booleanEquation_designApproach.tcl"/>
+  <File Type="REPORTS-TCL" Name="booleanEquation_designApproach_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="booleanEquation_designApproach.msk"/>
+  <File Type="RDI-RDI" Name="booleanEquation_designApproach.vdi"/>
+  <File Type="BG-BIT" Name="booleanEquation_designApproach.bit"/>
+  <File Type="BG-DRC" Name="booleanEquation_designApproach.drc"/>
+  <File Type="BG-BGN" Name="booleanEquation_designApproach.bgn"/>
+  <File Type="BG-BIN" Name="booleanEquation_designApproach.bin"/>
+  <File Type="BITSTR-RBT" Name="booleanEquation_designApproach.rbt"/>
+  <File Type="BITSTR-NKY" Name="booleanEquation_designApproach.nky"/>
+  <File Type="BITSTR-BMM" Name="booleanEquation_designApproach_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="booleanEquation_designApproach.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="booleanEquation_designApproach.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="booleanEquation_designApproach.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="booleanEquation_designApproach.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="booleanEquation_designApproach_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="booleanEquation_designApproach_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="booleanEquation_designApproach_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="booleanEquation_designApproach_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="booleanEquation_designApproach_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="booleanEquation_designApproach_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="booleanEquation_designApproach_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="booleanEquation_designApproach_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="booleanEquation_designApproach_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="booleanEquation_designApproach_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="booleanEquation_designApproach_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="booleanEquation_designApproach_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="booleanEquation_designApproach.pdi"/>
+  <File Type="RCFI_FILE" Name="booleanEquation_designApproach.rcfi"/>
+  <File Type="CFI_FILE" Name="booleanEquation_designApproach.cfi"/>
+  <File Type="RNPI_FILE" Name="booleanEquation_designApproach.rnpi"/>
+  <File Type="NPI_FILE" Name="booleanEquation_designApproach.npi"/>
+  <File Type="RBD_FILE" Name="booleanEquation_designApproach.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/withStatement_designApproach.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/booleanEquation_designApproach.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/whenStatement_designApproach.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="withStatement_designApproach"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Lab 2 Source files/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 2 Source files/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1632316566"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

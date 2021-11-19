@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep 22 17:00:20 2021
+# Process ID: 12680
+# Current directory: P:/IAS0600_VHDL/project_2/project_2.runs/synth_1
+# Command line: vivado.exe -log HA_source.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HA_source.tcl
+# Log file: P:/IAS0600_VHDL/project_2/project_2.runs/synth_1/HA_source.vds
+# Journal file: P:/IAS0600_VHDL/project_2/project_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source HA_source.tcl -notrace
