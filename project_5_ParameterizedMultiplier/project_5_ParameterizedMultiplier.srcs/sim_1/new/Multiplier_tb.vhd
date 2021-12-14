@@ -75,9 +75,27 @@ wait for 10 ns;
 
 for i in 0 to counter loop
     for j in 0 to counter loop
+    
         a_tb <= std_logic_vector(to_unsigned(i, n));
         b_tb <= std_logic_vector(to_unsigned(j, n));
         wait for 10 ns;
+        
+        assert(RCA_product_tb /= std_logic_vector(to_unsigned(i * j, n + n - 1))) -- asserting for fail statement for RCA based multiplier
+        report "Failure at a_tb = " & integer'image(to_integer(unsigned(a_tb))) & " and b_tb = " & integer'image(to_integer(unsigned(b_tb))) 
+        & " RCA_Product = " & integer'image(to_integer(unsigned(RCA_product_tb))) & " not equal to " & integer'image(i * j) severity ERROR;
+        
+        assert(RCA_product_tb = std_logic_vector(to_unsigned(i * j, n + n - 1))) -- asserting for pass statement for RCA based multiplier
+        report "Pass at a_tb = " & integer'image(to_integer(unsigned(a_tb))) & " and b_tb = " & integer'image(to_integer(unsigned(b_tb))) 
+        & " RCA_Product = " & integer'image(to_integer(unsigned(RCA_product_tb))) & " equal to " & integer'image(i * j) severity NOTE;
+        
+        assert(CLA_product_tb /= std_logic_vector(to_unsigned(i * j, n + n - 1))) -- asserting for fail statement for CLA based multiplier
+        report "Failure at a_tb = " & integer'image(to_integer(unsigned(a_tb))) & " and b_tb = " & integer'image(to_integer(unsigned(b_tb))) 
+        & " CLA_Product = " & integer'image(to_integer(unsigned(CLA_product_tb))) & " not equal to " & integer'image(i * j) severity ERROR;
+        
+        assert(CLA_product_tb = std_logic_vector(to_unsigned(i * j, n + n - 1))) -- asserting for pass statement for CLA based multiplier
+        report "Pass at a_tb = " & integer'image(to_integer(unsigned(a_tb))) & " and b_tb = " & integer'image(to_integer(unsigned(b_tb))) 
+        & " CLA_Product = " & integer'image(to_integer(unsigned(CLA_product_tb))) & " equal to " & integer'image(i * j) severity NOTE;
+        
     end loop;
 end loop;
 
