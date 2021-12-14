@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../project_3_CreepingLine.srcs/sources_1/new/Bin_2_7_SegDecoder.vhd" \
-"../../../../project_3_CreepingLine.srcs/sources_1/new/ThirdStep.vhd" \
-"../../../../project_3_CreepingLine.srcs/sim_1/imports/new/Counter_tb.vhd" \
-
-# Do not sort compile order
-nosort

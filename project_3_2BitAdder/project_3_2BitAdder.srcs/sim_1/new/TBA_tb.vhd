@@ -38,66 +38,18 @@ end TBA_tb;
 architecture Structural of TBA_tb is
 
 signal a_tb, b_tb : STD_LOGIC_VECTOR(1 downto 0);
-signal sum_carry_tb : STD_LOGIC_VECTOR(2 downto 0);
+signal sum_carry_tb1, sum_carry_tb2 : STD_LOGIC_VECTOR(2 downto 0);
+signal sum, carry : std_logic;
 
 begin
-UUT : entity work.TBA_Source port map (a_vector => a_tb, b_vector => b_tb, sum_and_carry_vector => sum_carry_tb);
+
+UUT1 : entity work.TBA_Source port map (a_vector => a_tb, b_vector => b_tb, sum_and_carry_vector => sum_carry_tb1);
+UUT2 : entity work.TBA_Block_wrapper port map (a_tb(0), a_tb(1), b_tb(0), b_tb(1), sum_carry_tb2(2), sum_carry_tb2(0), sum_carry_tb2(1));
+-- UUT3 : entity work.FA_Block_wrapper port map (a_tb(0), a_tb(1), '0', carry, sum);
+
 stimuli : process
 
 begin
-
---a_tb <= "00"; b_tb <= "00";
---wait for 10 ns;
-
---a_tb <= "00"; b_tb <= "01";
---wait for 10 ns;
-
---a_tb <= "00"; b_tb <= "10";
---wait for 10 ns;
-
---a_tb <= "00"; b_tb <= "11";
---wait for 10 ns;
-
-----
-
---a_tb <= "01"; b_tb <= "00";
---wait for 10 ns;
-
---a_tb <= "01"; b_tb <= "01";
---wait for 10 ns;
-
---a_tb <= "01"; b_tb <= "10";
---wait for 10 ns;
-
---a_tb <= "01"; b_tb <= "11";
---wait for 10 ns;
-
-----
-
---a_tb <= "10"; b_tb <= "00";
---wait for 10 ns;
-
---a_tb <= "10"; b_tb <= "01";
---wait for 10 ns;
-
---a_tb <= "10"; b_tb <= "10";
---wait for 10 ns;
-
---a_tb <= "10"; b_tb <= "11";
---wait for 10 ns;
-
-----
-
---a_tb <= "11"; b_tb <= "00";
---wait for 10 ns;
-
---a_tb <= "11"; b_tb <= "01";
---wait for 10 ns;
-
---a_tb <= "11"; b_tb <= "10";
---wait for 10 ns;
-
---a_tb <= "11"; b_tb <= "11";
 
 for i in 1 to 3 loop
     for j in 1 to 3 loop

@@ -1,42 +1,170 @@
 {
-    "design": {
-        "design_info": {
-            "boundary_crc": "0x0",
-            "device": "xc7a100tcsg324-1",
-            "name": "TBA_Block",
-            "rev_ctrl_bd_flag": "RevCtrlBdOff",
-            "synth_flow_mode": "Hierarchical",
-            "tool_version": "2020.1",
-            "gen_directory": "../../../../project_3_2BitAdder.gen/sources_1/bd/TBA_Block"
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6212510562125105",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../project_3_2BitAdder.gen/sources_1/bd/TBA_Block",
+      "name": "TBA_Block",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "FA_Block_0": "",
+      "HA_source_0": ""
+    },
+    "ports": {
+      "a_0": {
+        "direction": "I"
+      },
+      "b_0": {
+        "direction": "I"
+      },
+      "b_1": {
+        "direction": "I"
+      },
+      "a_1": {
+        "direction": "I"
+      },
+      "sum_0": {
+        "direction": "O"
+      },
+      "sum_1": {
+        "direction": "O"
+      },
+      "carry_out_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "FA_Block_0": {
+        "parameters": {
+          "ACTIVE_SIM_BD": {
+            "value": "FA_Block.bd"
+          },
+          "ACTIVE_SYNTH_BD": {
+            "value": "FA_Block.bd"
+          },
+          "ENABLE_DFX": {
+            "value": "0"
+          },
+          "LIST_SIM_BD": {
+            "value": "FA_Block.bd"
+          },
+          "LIST_SYNTH_BD": {
+            "value": "FA_Block.bd"
+          },
+          "LOCK_PROPAGATE": {
+            "value": "0"
+          }
         },
-        "design_tree": {
-            "HA_source_0": ""
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "carry_in": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O"
+          },
+          "carry_out": {
+            "direction": "O"
+          }
         },
-        "components": {
-            "HA_source_0": {
-                "vlnv": "xilinx.com:module_ref:HA_source:1.0",
-                "xci_name": "TBA_Block_HA_source_0_0",
-                "reference_info": {
-                    "ref_type": "hdl",
-                    "ref_name": "HA_source",
-                    "boundary_crc": "0x0"
-                },
-                "ports": {
-                    "a": {
-                        "direction": "I"
-                    },
-                    "b": {
-                        "direction": "I"
-                    },
-                    "sum": {
-                        "direction": "O"
-                    },
-                    "carry": {
-                        "direction": "O"
-                    }
-                },
-                "xci_path": "ip/TBA_Block_HA_source_0_0/TBA_Block_HA_source_0_0.xci"
-            }
+        "post_compiled_compname": "FA_Block_inst_0",
+        "architecture": "artix7",
+        "variant_info": {
+          "FA_Block.bd": {
+            "scoped_diagram": "FA_Block_inst_0.bd",
+            "design_checksum": "0x4C1DDC91",
+            "ref_name": "FA_Block",
+            "ref_subinst_path": "TBA_Block_FA_Block_0",
+            "ref_type": "Block Design",
+            "source_type": "all",
+            "active": "all"
+          }
         }
+      },
+      "HA_source_0": {
+        "vlnv": "xilinx.com:module_ref:HA_source:1.0",
+        "xci_name": "TBA_Block_HA_source_0_0",
+        "xci_path": "ip\\TBA_Block_HA_source_0_0\\TBA_Block_HA_source_0_0.xci",
+        "inst_hier_path": "HA_source_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "HA_source",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O"
+          },
+          "carry": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "FA_Block_0_carry_out": {
+        "ports": [
+          "FA_Block_0/carry_out",
+          "carry_out_0"
+        ]
+      },
+      "FA_Block_0_sum": {
+        "ports": [
+          "FA_Block_0/sum",
+          "sum_1"
+        ]
+      },
+      "HA_source_0_carry": {
+        "ports": [
+          "HA_source_0/carry",
+          "FA_Block_0/carry_in"
+        ]
+      },
+      "HA_source_0_sum": {
+        "ports": [
+          "HA_source_0/sum",
+          "sum_0"
+        ]
+      },
+      "a_0_1": {
+        "ports": [
+          "a_0",
+          "HA_source_0/a"
+        ]
+      },
+      "a_1_1": {
+        "ports": [
+          "a_1",
+          "FA_Block_0/a"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b_0",
+          "HA_source_0/b"
+        ]
+      },
+      "b_1_1": {
+        "ports": [
+          "b_1",
+          "FA_Block_0/b"
+        ]
+      }
     }
+  }
 }

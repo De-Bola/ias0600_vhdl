@@ -65,43 +65,52 @@ rst <= '1';
 wait for 20 ns;
 rst <= '0';
 wait for 10 ns;
---btn <= '1';
---wait for 40 ns;
---btn <= '0';
---wait for 20 ns;
---btn <= '1';
---wait for 40 ns;
---btn <= '0';
---wait for 20 ns;
---btn <= '1';
---wait for 30 ns;
---btn <= '0';
---wait for 50 ns;
---btn <= '1';
---wait for 50 ns;
---btn <= '0';
---wait for 50 ns;
---btn <= '1';
---wait for 30 ns;
---btn <= '0';
---wait for 50 ns;
---btn <= '1';
---wait for 30 ns;
---is_done <= '1';
 
-for i in 1 to 4 loop
-    wait for 20 ns;
+-- simulating bounces
+for i in 1 to 8 loop
+    wait for 200 us;
     btn <= '1';
-    wait for 40 ns;
+    wait for 400 us;
     btn <= '0';
 end loop;
 
 wait for 40 ns;
 
+-- pressing button 2x
+for i in 1 to 2 loop
+    wait for 200 ms;
+    btn <= '1';
+    wait for 300 ms;
+    btn <= '0';
+end loop;
+
+wait for 40 ns;
+
+-- simulating bounces
+for i in 1 to 10 loop
+    wait for 200 us;
+    btn <= '1';
+    wait for 400 us;
+    btn <= '0';
+end loop;
+
+wait for 40 ns;
+
+-- pressing button 4x
 for i in 1 to 4 loop
     wait for 200 ms;
     btn <= '1';
     wait for 300 ms;
+    btn <= '0';
+end loop;
+
+wait for 40 ns;
+
+-- simulating bounces
+for i in 1 to 8 loop
+    wait for 200 us;
+    btn <= '1';
+    wait for 400 us;
     btn <= '0';
 end loop;
 

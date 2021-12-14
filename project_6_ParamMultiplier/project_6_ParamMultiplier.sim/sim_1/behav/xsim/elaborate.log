@@ -1,0 +1,30 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 4b7031e6b965493383d1351096b47398 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Multiplier_tb_behav xil_defaultlib.Multiplier_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/adgbir/OneDrive - TalTech/IAS0600_VHDL/project_6_ParamMultiplier/project_6_ParamMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:42]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/adgbir/OneDrive - TalTech/IAS0600_VHDL/project_6_ParamMultiplier/project_6_ParamMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:43]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/adgbir/OneDrive - TalTech/IAS0600_VHDL/project_6_ParamMultiplier/project_6_ParamMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:44]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/adgbir/OneDrive - TalTech/IAS0600_VHDL/project_6_ParamMultiplier/project_6_ParamMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:51]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/adgbir/OneDrive - TalTech/IAS0600_VHDL/project_6_ParamMultiplier/project_6_ParamMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:51]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/adgbir/OneDrive - TalTech/IAS0600_VHDL/project_6_ParamMultiplier/project_6_ParamMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:52]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/adgbir/OneDrive - TalTech/IAS0600_VHDL/project_6_ParamMultiplier/project_6_ParamMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:52]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture dataflow of entity xil_defaultlib.HA_source [ha_source_default]
+Compiling architecture structural of entity xil_defaultlib.FA_Source [fa_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_Source [rca_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.Bin_2_7_SegDecoder [bin_2_7_segdecoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecondStep [secondstep_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplier [\Multiplier(msb_1=4,adder_type="...]
+Compiling architecture behavioral of entity xil_defaultlib.CLA_Adder [\CLA_Adder(width=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplier [\Multiplier(msb_1=4,adder_type="...]
+Compiling architecture behavioral of entity xil_defaultlib.multiplier_tb
+Built simulation snapshot Multiplier_tb_behav

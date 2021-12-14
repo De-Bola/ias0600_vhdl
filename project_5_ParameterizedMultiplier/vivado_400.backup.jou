@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec 13 17:30:58 2021
+# Process ID: 400
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18916 C:\Users\bhumm\OneDrive - TalTech\IAS0600_VHDL\project_5_ParameterizedMultiplier\project_5_ParameterizedMultiplier.xpr
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/vivado.log
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source Multiplier_tb.tcl
+run all
+restart
+run all
+restart
+run 2.6 ns
+restart
+run all
+restart
+run 2.6 us
+run 5.2 us
+restart
+run 5.2 us
+restart
+run 3 ns
+restart
+run 3 ns
+restart
+run 3 us
+close_sim
+archive_project {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier.xpr.zip} -temp_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/.Xil/Vivado-400-LAPTOP-1AC7T8FO} -force -exclude_run_results

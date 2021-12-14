@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec  4 12:49:50 2021
+# Process ID: 12732
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/impl_1
+# Command line: vivado.exe -log booleanEquation_designApproach.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source booleanEquation_designApproach.tcl -notrace
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/impl_1/booleanEquation_designApproach.vdi
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source booleanEquation_designApproach.tcl -notrace

@@ -41,10 +41,10 @@ architecture Behavioral of CounterDecoder is
 begin
 
 --decoder(counter)
-decoder <= "0001" when (counter = "00") else
-           "0010" when (counter = "01") else
-           "0100" when (counter = "10") else
-           "1000" when (counter = "11") else
-           "0000";
+decoder <= "11111110" when (counter = "00") else
+           "11111101" when (counter = "01") else
+           "11111011" when (counter = "10") else
+           "11110111" when (counter = "11") else
+           "11111111";
 
 end Behavioral;

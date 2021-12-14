@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec 13 23:01:41 2021
+# Process ID: 22152
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_6_FSM/project_6_FSM.runs/impl_1
+# Command line: vivado.exe -log gcd_fsm.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source gcd_fsm.tcl -notrace
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_6_FSM/project_6_FSM.runs/impl_1/gcd_fsm.vdi
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_6_FSM/project_6_FSM.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source gcd_fsm.tcl -notrace

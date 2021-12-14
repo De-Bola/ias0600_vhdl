@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec 13 17:30:58 2021
+# Process ID: 400
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18916 C:\Users\bhumm\OneDrive - TalTech\IAS0600_VHDL\project_5_ParameterizedMultiplier\project_5_ParameterizedMultiplier.xpr
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/vivado.log
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Multiplier_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Multiplier_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Multiplier_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Multiplier_tb'
+WARNING: [VRFC 10-3711] signal 'n' is used in subtype-indication/type-definition [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:42]
+WARNING: [VRFC 10-3711] signal 'n' is used in subtype-indication/type-definition [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:43]
+WARNING: [VRFC 10-3092] actual expression for generic 'msb_1' cannot reference a signal [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:51]
+WARNING: [VRFC 10-3092] actual expression for generic 'msb_1' cannot reference a signal [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:52]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.sim/sim_1/behav/xsim'
+"xelab -wto 9411b0ce00c047de9892839a1374a891 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Multiplier_tb_behav xil_defaultlib.Multiplier_tb -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 9411b0ce00c047de9892839a1374a891 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Multiplier_tb_behav xil_defaultlib.Multiplier_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:42]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:43]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:44]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:51]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:51]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:52]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'n' [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:52]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture dataflow of entity xil_defaultlib.HA_source [ha_source_default]
+Compiling architecture structural of entity xil_defaultlib.FA_Source [fa_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_Source [rca_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.Bin_2_7_SegDecoder [bin_2_7_segdecoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecondStep [secondstep_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplier [\Multiplier(msb_1=4,adder_type="...]
+Compiling architecture behavioral of entity xil_defaultlib.CLA_Adder [\CLA_Adder(width=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplier [\Multiplier(msb_1=4,adder_type="...]
+Compiling architecture behavioral of entity xil_defaultlib.multiplier_tb
+Built simulation snapshot Multiplier_tb_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Multiplier_tb_behav -key {Behavioral:sim_1:Functional:Multiplier_tb} -tclbatch {Multiplier_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Multiplier_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Multiplier_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1136.410 ; gain = 0.000
+run all
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.410 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 2.6 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 2.6 us
+run 5.2 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5.2 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+archive_project {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier.xpr.zip} -temp_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/.Xil/Vivado-400-LAPTOP-1AC7T8FO} -force -exclude_run_results
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/.Xil/Vivado-400-LAPTOP-1AC7T8FO' for archiving project
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/.Xil/Vivado-400-LAPTOP-1AC7T8FO/PrjAr/_X_'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 13 17:54:02 2021...

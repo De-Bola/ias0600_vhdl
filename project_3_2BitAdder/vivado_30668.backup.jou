@@ -1,0 +1,327 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Dec  5 08:31:28 2021
+# Process ID: 30668
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1364 C:\Users\bhumm\OneDrive - TalTech\IAS0600_VHDL\project_3_2BitAdder\project_3_2BitAdder.xpr
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/vivado.log
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.xpr}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+current_bd_design [get_bd_designs TBA_Block]
+current_bd_design [get_bd_designs FA_Block]
+close_bd_design [get_bd_designs FA_Block]
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -top
+add_files -norecurse {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+export_ip_user_files -of_objects  [get_files {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+close_bd_design [get_bd_designs TBA_Block]
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+close_bd_design [get_bd_designs TBA_Block]
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+create_bd_cell -type container -reference FA_Block FA_Block_0
+set_property location {0.5 -383 -829} [get_bd_cells HA_source_0]
+connect_bd_net [get_bd_pins HA_source_0/carry] [get_bd_pins FA_Block_0/carry_in]
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_0/a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_0/b]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/b]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_0/sum]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/sum]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/carry_out]
+endgroup
+save_bd_design
+current_bd_design [get_bd_designs FA_Block]
+close_bd_design [get_bd_designs FA_Block]
+close_bd_design [get_bd_designs TBA_Block]
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -top
+add_files -norecurse {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+update_compile_order -fileset sources_1
+close_bd_design [get_bd_designs TBA_Block]
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+close_bd_design [get_bd_designs TBA_Block]
+generate_target Simulation [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -directory {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files} -ipstatic_source_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/modelsim} {questa=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/questa} {riviera=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/riviera} {activehdl=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -directory {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files} -ipstatic_source_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/modelsim} {questa=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/questa} {riviera=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/riviera} {activehdl=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+generate_target Simulation [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -directory {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files} -ipstatic_source_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/modelsim} {questa=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/questa} {riviera=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/riviera} {activehdl=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+export_ip_user_files -of_objects  [get_files {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+validate_bd_design
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -top
+add_files -norecurse {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+set_property coreContainer.enable 1 [current_project]
+export_ip_user_files -of_objects  [get_files {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -top
+add_files -norecurse {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+current_bd_design [get_bd_designs FA_Block]
+current_bd_design [get_bd_designs TBA_Block]
+current_bd_design [get_bd_designs FA_Block]
+current_bd_design [get_bd_designs TBA_Block]
+current_bd_design [get_bd_designs FA_Block]
+current_bd_design [get_bd_designs TBA_Block]
+set_property name HA_source_4 [get_bd_cells HA_source_0]
+regenerate_bd_layout
+undo
+current_bd_design [get_bd_designs FA_Block]
+current_bd_design [get_bd_designs TBA_Block]
+export_ip_user_files -of_objects  [get_files {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+save_bd_design
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+current_bd_design [get_bd_designs TBA_Block]
+current_bd_design [get_bd_designs FA_Block]
+close_bd_design [get_bd_designs FA_Block]
+create_bd_design "TBA_Design"
+update_compile_order -fileset sources_1
+create_bd_cell -type container -reference TBA_Block TBA_Block_0
+current_bd_design [get_bd_designs TBA_Block]
+validate_bd_design
+save_bd_design
+current_bd_design [get_bd_designs TBA_Design]
+create_bd_cell -type container -reference TBA_Block TBA_Block_0
+current_bd_design [get_bd_designs TBA_Block]
+validate_bd_design -force
+create_bd_port -dir I -from 1 -to 0 a_in
+set_property location {-582 -875} [get_bd_ports a_in]
+set_property location {-648 -922} [get_bd_ports a_in]
+undo
+set_property location {-575 -534} [get_bd_ports a_in]
+delete_bd_objs [get_bd_nets a_1_1]
+connect_bd_net [get_bd_ports a_in] [get_bd_pins FA_Block_0/a]
+delete_bd_objs [get_bd_nets a_0_1]
+connect_bd_net [get_bd_ports a_in] [get_bd_pins HA_source_4/a]
+delete_bd_objs [get_bd_nets a_in_1]
+connect_bd_net [get_bd_ports a_in] [get_bd_pins FA_Block_0/a]
+connect_bd_net [get_bd_ports a_in] [get_bd_pins HA_source_4/a]
+delete_bd_objs [get_bd_nets a_in_1]
+connect_bd_net [get_bd_ports a_in] [get_bd_pins FA_Block_0/a]
+set_property location {-653 -1019} [get_bd_ports a_in]
+set_property location {-527 -909} [get_bd_ports a_in]
+delete_bd_objs [get_bd_nets a_in_1]
+startgroup
+connect_bd_net [get_bd_ports a_in] [get_bd_pins FA_Block_0/a]
+connect_bd_net [get_bd_ports a_in] [get_bd_pins HA_source_4/a]
+endgroup
+delete_bd_objs [get_bd_nets b_1_1]
+delete_bd_objs [get_bd_nets b_0_1] [get_bd_ports b_1] [get_bd_ports b_0] [get_bd_ports a_1] [get_bd_ports a_0]
+create_bd_port -dir I -from 1 -to 0 b_in
+set_property location {-516 -661} [get_bd_ports b_in]
+startgroup
+connect_bd_net [get_bd_ports b_in] [get_bd_pins FA_Block_0/b]
+connect_bd_net [get_bd_ports b_in] [get_bd_pins HA_source_4/b]
+endgroup
+create_bd_port -dir O -from 2 -to 0 sum_carry_out
+delete_bd_objs [get_bd_nets FA_Block_0_sum] [get_bd_nets HA_source_0_sum] [get_bd_nets FA_Block_0_carry_out] [get_bd_ports sum_1] [get_bd_ports sum_0] [get_bd_ports carry_out_0]
+connect_bd_net [get_bd_ports sum_carry_out] [get_bd_pins FA_Block_0/carry_out]
+delete_bd_objs [get_bd_nets FA_Block_0_carry_out] [get_bd_ports sum_carry_out]
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/sum] [get_bd_pins HA_source_4/sum]
+endgroup
+delete_bd_objs [get_bd_nets FA_Block_0_sum] [get_bd_ports sum_0]
+delete_bd_objs [get_bd_nets HA_source_4_sum] [get_bd_ports sum_1]
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_4/sum]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/sum]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/carry_out]
+endgroup
+save_bd_design
+validate_bd_design
+save_bd_design
+close_bd_design [get_bd_designs TBA_Block]
+create_bd_cell -type container -reference TBA_Block TBA_Block_0
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+delete_bd_objs [get_bd_nets b_in_1]
+delete_bd_objs [get_bd_ports b_in]
+delete_bd_objs [get_bd_ports a_in]
+delete_bd_objs [get_bd_nets a_in_1]
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+current_bd_design [get_bd_designs TBA_Block]
+reset_property LEFT [get_bd_pins a]
+save_bd_design
+delete_bd_objs [get_bd_nets HA_source_0_carry] [get_bd_nets FA_Block_0_sum] [get_bd_nets FA_Block_0_carry_out] [get_bd_cells FA_Block_0]
+create_bd_cell -type container -reference FA_Block FA_Block_0
+set_property location {2.5 -96 -668} [get_bd_cells FA_Block_0]
+connect_bd_net [get_bd_pins HA_source_4/carry] [get_bd_pins FA_Block_0/carry_in]
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_4/a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_4/b]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/b]
+endgroup
+connect_bd_net [get_bd_ports carry_out_0] [get_bd_pins FA_Block_0/sum]
+delete_bd_objs [get_bd_nets FA_Block_0_sum]
+connect_bd_net [get_bd_ports sum_1] [get_bd_pins FA_Block_0/sum]
+connect_bd_net [get_bd_ports carry_out_0] [get_bd_pins FA_Block_0/carry_out]
+save_bd_design
+validate_bd_design
+validate_bd_design -force
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -top
+add_files -norecurse {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Design/TBA_Design.bd}
+current_bd_design [get_bd_designs TBA_Block]
+close_bd_design [get_bd_designs TBA_Block]
+close_bd_design [get_bd_designs FA_Block]
+create_bd_cell -type module -reference TBA_Block_wrapper TBA_Block_wrapper_0
+delete_bd_objs [get_bd_cells TBA_Block_wrapper_0]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TBA_Block_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+delete_bd_objs [get_bd_nets HA_source_4_sum] [get_bd_ports sum_0]
+delete_bd_objs [get_bd_nets FA_Block_0_sum] [get_bd_ports sum_1]
+delete_bd_objs [get_bd_nets FA_Block_0_carry_out] [get_bd_ports carry_out_0]
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_4/sum]
+endgroup
+delete_bd_objs [get_bd_nets HA_source_4_sum] [get_bd_ports sum_0]
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_4/sum]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/sum]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/carry_out]
+endgroup
+validate_bd_design
+save_bd_design
+close_bd_design [get_bd_designs TBA_Block]
+create_bd_cell -type container -reference TBA_Block TBA_Block_0
+export_ip_user_files -of_objects  [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Design/TBA_Design.bd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Design/TBA_Design.bd}}
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -fileset [get_filesets sources_1] -inst_template
+generate_target Simulation [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -directory {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files} -ipstatic_source_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/modelsim} {questa=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/questa} {riviera=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/riviera} {activehdl=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+close_bd_design [get_bd_designs TBA_Block]
+make_wrapper -files [get_files {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/bd/FA_Block_inst_1/FA_Block_inst_1.bd}}] -fileset [get_filesets FA_Block_inst_1] -inst_template
+close_project
+open_project {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}
+open_bd_design {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}
+launch_simulation
+launch_simulation
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -fileset [get_filesets sources_1] -inst_template
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -top
+export_ip_user_files -of_objects  [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -fileset [get_filesets sources_1] -inst_template
+export_ip_user_files -of_objects  [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}
+file delete -force {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block}
+file delete -force {c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block}
+create_bd_design "TBA_Block"
+update_compile_order -fileset sources_1
+current_bd_design [get_bd_designs FA_Block]
+close_bd_design [get_bd_designs FA_Block]
+create_bd_cell -type container -reference FA_Block FA_Block_0
+create_bd_cell -type module -reference HA_source HA_source_0
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_0/a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_0/b]
+endgroup
+connect_bd_net [get_bd_pins HA_source_0/carry] [get_bd_pins FA_Block_0/carry_in]
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/b]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins HA_source_0/sum]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/sum]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins FA_Block_0/carry_out]
+endgroup
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -top
+add_files -norecurse {{c:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.gen/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v}}
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/TBA_Block/TBA_Block.bd}}] -directory {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files} -ipstatic_source_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/modelsim} {questa=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/questa} {riviera=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/riviera} {activehdl=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+generate_target Simulation [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}}] -directory {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files} -ipstatic_source_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/modelsim} {questa=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/questa} {riviera=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/riviera} {activehdl=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+close_bd_design [get_bd_designs TBA_Block]
+generate_target Simulation [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.srcs/sources_1/bd/FA_Block/FA_Block.bd}}] -directory {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files} -ipstatic_source_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/modelsim} {questa=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/questa} {riviera=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/riviera} {activehdl=C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation

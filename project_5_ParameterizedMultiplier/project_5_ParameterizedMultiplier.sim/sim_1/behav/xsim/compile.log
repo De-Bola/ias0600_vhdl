@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Multiplier_tb'
-WARNING: [VRFC 10-3711] signal 'n' is used in subtype-indication/type-definition [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:42]
-WARNING: [VRFC 10-3711] signal 'n' is used in subtype-indication/type-definition [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:43]
-WARNING: [VRFC 10-3092] actual expression for generic 'msb_1' cannot reference a signal [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:51]
-WARNING: [VRFC 10-3092] actual expression for generic 'msb_1' cannot reference a signal [C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_5_ParameterizedMultiplier/project_5_ParameterizedMultiplier.srcs/sim_1/new/Multiplier_tb.vhd:52]

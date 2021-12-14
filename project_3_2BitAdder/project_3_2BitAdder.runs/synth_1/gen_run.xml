@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1634137364">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1638699260">
   <File Type="PA-TCL" Name="TBA_Source.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="TBA_Source_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="TBA_Source_reports.tcl"/>
@@ -9,7 +9,7 @@
   <File Type="RDS-DCP" Name="TBA_Source.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="TBA_Source_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="TBA_Source_timing_summary_synth.pb"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Lab 2 Source files/HA_source.vhd">
       <FileInfo>
@@ -39,7 +39,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v">
+    <File Path="$PGENDIR/sources_1/bd/TBA_Block/hdl/TBA_Block_wrapper.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -55,11 +55,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/hdl/FA_Block_wrapper.v">
+    <File Path="$PGENDIR/sources_1/bd/FA_Block/hdl/FA_Block_wrapper.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/FA_Block/hdl/FA_Block_wrapper.v"/>
-        <Attr Name="ImportTime" Val="1634136806"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -72,10 +70,8 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/Lab 2 Source files/Nexys4DDR_Master.xdc">
-      <FileInfo RelPath="Nexys4DDR_Master.xdc">
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 2 Source files/Nexys4DDR_Master.xdc"/>
-        <Attr Name="ImportTime" Val="1632316566"/>
+    <File Path="$PSRCDIR/constrs_1/Nexys4DDR_Master.xdc">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -94,4 +90,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="FA_Block_inst_0_HA_source_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FA_Block_inst_0_HA_source_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FA_Block_inst_0_HA_source_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TBA_Block_HA_source_0_0"/>
 </GenRun>

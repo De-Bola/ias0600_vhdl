@@ -39,12 +39,12 @@ end TBA_Source;
 
 architecture Structural of TBA_Source is
 
-component halfAdder is
-    Port ( in1, in2 : in STD_LOGIC;
+component HA_Source is
+    Port ( a, b : in STD_LOGIC;
            sum, carry : out STD_LOGIC);
      end component;
            
-component fullAdder is
+component FA_Source is
     Port ( a_in : in STD_LOGIC;
            b_in : in STD_LOGIC;
            carry_in : in STD_LOGIC;
@@ -56,8 +56,8 @@ signal temp1 : std_logic;
     
 begin
 
-HA: halfAdder port map(in1 => a_vector(0), in2 => b_vector(0), sum => sum_and_carry_vector(0), carry => temp1);
+HA: HA_Source port map(a => a_vector(0), b => b_vector(0), sum => sum_and_carry_vector(0), carry => temp1);
 
-FA: fullAdder port map(a_in => a_vector(1), b_in => b_vector(1), carry_in => temp1, sum => sum_and_carry_vector(1), carry_out => sum_and_carry_vector(2) );
+FA: FA_Source port map(a_in => a_vector(1), b_in => b_vector(1), carry_in => temp1, sum => sum_and_carry_vector(1), carry_out => sum_and_carry_vector(2) );
 
 end Structural;

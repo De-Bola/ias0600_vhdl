@@ -50,6 +50,7 @@ signal clock_250Hz : std_logic;
 signal temp : std_logic_vector(1 downto 0);
 signal counter : integer range 0 to 399999; -- time for 62.5 * 4 Hz in ticks
 signal output : STD_LOGIC_VECTOR (3 downto 0);
+--signal mux_input : std_logic_vector(15 downto 0);
 
 begin
 -- slow down the 100 MHz clock to 62.5 Hz
@@ -94,6 +95,9 @@ output <= input_1 when "00",
           input_3 when "10",
           input_4 when "11",
           "0000" when others;
+          
+--MUX : -- mux_input
+--    entity work.MUX port map (input_1 & input_2 & input_3 & input_4, temp, output);
 
 -- bin to 7 seg
 SSeg: Bin_2_7_SegDecoder port map (sw_input => output, seg_output => seven_seg_out);

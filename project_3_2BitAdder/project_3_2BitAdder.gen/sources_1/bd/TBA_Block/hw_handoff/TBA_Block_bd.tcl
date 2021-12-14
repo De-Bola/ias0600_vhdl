@@ -20,7 +20,7 @@ set script_folder [_tcl::get_script_folder]
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2020.1
+set scripts_vivado_version 2021.1
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -40,9 +40,16 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# FA_Source, HA_source
+# HA_source
 
 # Please add the sources of those modules before sourcing this Tcl script.
+
+
+# The design that will be created by this Tcl script contains the following 
+# block design container source references:
+# FA_Block
+
+# Please add the sources before sourcing this Tcl script.
 
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
@@ -168,21 +175,21 @@ proc create_root_design { parentCell } {
   set a_1 [ create_bd_port -dir I a_1 ]
   set b_0 [ create_bd_port -dir I b_0 ]
   set b_1 [ create_bd_port -dir I b_1 ]
-  set carry [ create_bd_port -dir O carry ]
+  set carry_out_0 [ create_bd_port -dir O carry_out_0 ]
   set sum_0 [ create_bd_port -dir O sum_0 ]
   set sum_1 [ create_bd_port -dir O sum_1 ]
 
-  # Create instance: FA_Source_0, and set properties
-  set block_name FA_Source
-  set block_cell_name FA_Source_0
-  if { [catch {set FA_Source_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $FA_Source_0 eq "" } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
+  # Create instance: FA_Block_0, and set properties
+  set FA_Block_0 [ create_bd_cell -type container -reference FA_Block FA_Block_0 ]
+  set_property -dict [ list \
+   CONFIG.ACTIVE_SIM_BD {FA_Block.bd} \
+   CONFIG.ACTIVE_SYNTH_BD {FA_Block.bd} \
+   CONFIG.ENABLE_DFX {0} \
+   CONFIG.LIST_SIM_BD {FA_Block.bd} \
+   CONFIG.LIST_SYNTH_BD {FA_Block.bd} \
+   CONFIG.LOCK_PROPAGATE {0} \
+ ] $FA_Block_0
+
   # Create instance: HA_source_0, and set properties
   set block_name HA_source
   set block_cell_name HA_source_0
@@ -195,14 +202,14 @@ proc create_root_design { parentCell } {
    }
   
   # Create port connections
-  connect_bd_net -net FA_Source_0_carry_out [get_bd_ports carry] [get_bd_pins FA_Source_0/carry_out]
-  connect_bd_net -net FA_Source_0_sum [get_bd_ports sum_1] [get_bd_pins FA_Source_0/sum]
-  connect_bd_net -net HA_source_0_carry [get_bd_pins FA_Source_0/carry_in] [get_bd_pins HA_source_0/carry]
+  connect_bd_net -net FA_Block_0_carry_out [get_bd_ports carry_out_0] [get_bd_pins FA_Block_0/carry_out]
+  connect_bd_net -net FA_Block_0_sum [get_bd_ports sum_1] [get_bd_pins FA_Block_0/sum]
+  connect_bd_net -net HA_source_0_carry [get_bd_pins FA_Block_0/carry_in] [get_bd_pins HA_source_0/carry]
   connect_bd_net -net HA_source_0_sum [get_bd_ports sum_0] [get_bd_pins HA_source_0/sum]
   connect_bd_net -net a_0_1 [get_bd_ports a_0] [get_bd_pins HA_source_0/a]
-  connect_bd_net -net a_in_0_1 [get_bd_ports a_1] [get_bd_pins FA_Source_0/a_in]
+  connect_bd_net -net a_1_1 [get_bd_ports a_1] [get_bd_pins FA_Block_0/a]
   connect_bd_net -net b_0_1 [get_bd_ports b_0] [get_bd_pins HA_source_0/b]
-  connect_bd_net -net b_in_0_1 [get_bd_ports b_1] [get_bd_pins FA_Source_0/b_in]
+  connect_bd_net -net b_1_1 [get_bd_ports b_1] [get_bd_pins FA_Block_0/b]
 
   # Create address segments
 

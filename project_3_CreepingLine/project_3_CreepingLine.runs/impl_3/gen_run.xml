@@ -2,79 +2,61 @@
 <GenRun Id="impl_3" LaunchPart="xc7a100tcsg324-1" LaunchTime="1637161199">
   <File Type="ROUTE-PWR" Name="ThirdStep_power_routed.rpt"/>
   <File Type="PA-TCL" Name="ThirdStep.tcl"/>
-  <File Type="BITSTR-MMI" Name="ThirdStep.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="ThirdStep_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="ThirdStep_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="ThirdStep_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="ThirdStep_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="ThirdStep_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="ThirdStep_opt.dcp"/>
+  <File Type="BITSTR-MSK" Name="ThirdStep.msk"/>
+  <File Type="ROUTE-CLK" Name="ThirdStep_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="ThirdStep.vdi"/>
+  <File Type="BG-BIT" Name="ThirdStep.bit"/>
+  <File Type="BG-DRC" Name="ThirdStep.drc"/>
+  <File Type="BG-BGN" Name="ThirdStep.bgn"/>
+  <File Type="BG-BIN" Name="ThirdStep.bin"/>
+  <File Type="BITSTR-RBT" Name="ThirdStep.rbt"/>
+  <File Type="BITSTR-NKY" Name="ThirdStep.nky"/>
+  <File Type="BITSTR-BMM" Name="ThirdStep_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ThirdStep.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ThirdStep_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="ThirdStep.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ThirdStep_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ThirdStep.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="ThirdStep_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="ThirdStep.hwdef"/>
-  <File Type="PWROPT-DCP" Name="ThirdStep_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="ThirdStep_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="ThirdStep_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="ThirdStep_placed.dcp"/>
   <File Type="PLACE-IO" Name="ThirdStep_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="ThirdStep_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="ThirdStep_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="ThirdStep_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="ThirdStep_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="ThirdStep_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="ThirdStep_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="ThirdStep.bin"/>
-  <File Type="PLACE-TIMING" Name="ThirdStep_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="ThirdStep_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="ThirdStep.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="ThirdStep_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="ThirdStep_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="ThirdStep_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="ThirdStep.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="ThirdStep_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="ThirdStep_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="ThirdStep_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="ThirdStep_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="ThirdStep_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="ThirdStep_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="ThirdStep_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="ThirdStep_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ThirdStep_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ThirdStep_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="ThirdStep_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="ThirdStep_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="ThirdStep_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="ThirdStep_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ThirdStep_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ThirdStep_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="ThirdStep_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="ThirdStep_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="ThirdStep_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="ThirdStep_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="ThirdStep_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="ThirdStep_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="ThirdStep_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="ThirdStep_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="ThirdStep_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="ThirdStep_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="ThirdStep_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ThirdStep_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="ThirdStep_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="ThirdStep_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ThirdStep_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ThirdStep_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ThirdStep_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ThirdStep_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ThirdStep_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="ThirdStep.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ThirdStep_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ThirdStep_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="ThirdStep.nky"/>
-  <File Type="BITSTR-BMM" Name="ThirdStep_bd.bmm"/>
+  <File Type="ROUTE-DRC-RPX" Name="ThirdStep_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ThirdStep_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="ThirdStep.pdi"/>
   <File Type="RCFI_FILE" Name="ThirdStep.rcfi"/>
   <File Type="CFI_FILE" Name="ThirdStep.cfi"/>
   <File Type="RNPI_FILE" Name="ThirdStep.rnpi"/>
   <File Type="NPI_FILE" Name="ThirdStep.npi"/>
   <File Type="RBD_FILE" Name="ThirdStep.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="ThirdStep.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="ThirdStep.sysdef"/>
-  <File Type="BG-BGN" Name="ThirdStep.bgn"/>
-  <File Type="BG-DRC" Name="ThirdStep.drc"/>
-  <File Type="RDI-RDI" Name="ThirdStep.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Bin_2_7_SegDecoder.vhd">
@@ -161,5 +143,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

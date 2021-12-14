@@ -1,27 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Oct 13 18:16:34 2021" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec  5 11:33:14 2021" VIVADOVERSION="2021.1">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="TBA_Block" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="I" NAME="a_1" SIGIS="undef" SIGNAME="External_Ports_a_1">
+    <PORT DIR="I" NAME="a_0" SIGIS="undef" SIGNAME="External_Ports_a_0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="FA_Source_0" PORT="a_in"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="b_1" SIGIS="undef" SIGNAME="External_Ports_b_1">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="FA_Source_0" PORT="b_in"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="carry" SIGIS="undef" SIGNAME="FA_Source_0_carry_out">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="FA_Source_0" PORT="carry_out"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="sum_1" SIGIS="undef" SIGNAME="FA_Source_0_sum">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="FA_Source_0" PORT="sum"/>
+        <CONNECTION INSTANCE="HA_source_0" PORT="a"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="b_0" SIGIS="undef" SIGNAME="External_Ports_b_0">
@@ -29,9 +14,14 @@
         <CONNECTION INSTANCE="HA_source_0" PORT="b"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="a_0" SIGIS="undef" SIGNAME="External_Ports_a_0">
+    <PORT DIR="I" NAME="b_1" SIGIS="undef" SIGNAME="External_Ports_b_1">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="HA_source_0" PORT="a"/>
+        <CONNECTION INSTANCE="FA_Block_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="a_1" SIGIS="undef" SIGNAME="External_Ports_a_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FA_Block_0" PORT="a"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="sum_0" SIGIS="undef" SIGNAME="HA_source_0_sum">
@@ -39,24 +29,38 @@
         <CONNECTION INSTANCE="HA_source_0" PORT="sum"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" NAME="sum_1" SIGIS="undef" SIGNAME="FA_Block_0_sum">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FA_Block_0" PORT="sum"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="carry_out_0" SIGIS="undef" SIGNAME="FA_Block_0_carry_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FA_Block_0" PORT="carry_out"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="1" FULLNAME="/FA_Source_0" HWVERSION="1.0" INSTANCE="FA_Source_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FA_Source" VLNV="xilinx.com:module_ref:FA_Source:1.0">
+    <MODULE BD="FA_Block_inst_0" BDTYPE="BLOCK_CONTAINER" DRIVERMODE="SUBCORE" FULLNAME="/FA_Block_0" INSTANCE="FA_Block_0" IS_ENABLE="1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="TBA_Block_FA_Source_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="ACTIVE_SYNTH_BD" VALUE="FA_Block.bd"/>
+        <PARAMETER NAME="LOCK_PROPAGATE" VALUE="0"/>
+        <PARAMETER NAME="ACTIVE_SIM_BD" VALUE="FA_Block.bd"/>
+        <PARAMETER NAME="LIST_SYNTH_BD" VALUE="FA_Block.bd"/>
+        <PARAMETER NAME="LIST_SIM_BD" VALUE="FA_Block.bd"/>
+        <PARAMETER NAME="ENABLE_DFX" VALUE="0"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="a_in" SIGIS="undef" SIGNAME="External_Ports_a_1">
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="External_Ports_a_1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="a_1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="b_in" SIGIS="undef" SIGNAME="External_Ports_b_1">
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_b_1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="b_1"/>
           </CONNECTIONS>
@@ -66,14 +70,14 @@
             <CONNECTION INSTANCE="HA_source_0" PORT="carry"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="FA_Source_0_sum">
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="FA_Block_0_sum">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="sum_1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="carry_out" SIGIS="undef" SIGNAME="FA_Source_0_carry_out">
+        <PORT DIR="O" NAME="carry_out" SIGIS="undef" SIGNAME="FA_Block_0_carry_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="carry"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="carry_out_0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -103,7 +107,7 @@
         </PORT>
         <PORT DIR="O" NAME="carry" SIGIS="undef" SIGNAME="HA_source_0_carry">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="FA_Source_0" PORT="carry_in"/>
+            <CONNECTION INSTANCE="FA_Block_0" PORT="carry_in"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

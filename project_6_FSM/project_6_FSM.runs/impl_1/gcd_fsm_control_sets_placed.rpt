@@ -1,0 +1,84 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Dec 13 23:01:03 2021
+| Host         : LAPTOP-1AC7T8FO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file gcd_fsm_control_sets_placed.rpt
+| Design       : gcd_fsm
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     6 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     0 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            5 |
+| No           | No                    | Yes                    |               3 |            3 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              36 |           13 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+---------------+------------------+------------------+----------------+--------------+
+|                Clock Signal               | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------+---------------+------------------+------------------+----------------+--------------+
+|  clock_IBUF_BUFG                          |               |                  |                2 |              2 |         1.00 |
+|  clock_IBUF_BUFG                          |               | reset_IBUF       |                3 |              3 |         1.00 |
+|  FSM_sequential_next_state_reg[2]_i_2_n_0 |               |                  |                3 |              3 |         1.00 |
+|  clock_IBUF_BUFG                          | next_output   | reset_IBUF       |                4 |             12 |         3.00 |
+|  clock_IBUF_BUFG                          | next_reg1     | reset_IBUF       |                5 |             12 |         2.40 |
+|  clock_IBUF_BUFG                          | next_reg2     | reset_IBUF       |                4 |             12 |         3.00 |
++-------------------------------------------+---------------+------------------+------------------+----------------+--------------+
+
+

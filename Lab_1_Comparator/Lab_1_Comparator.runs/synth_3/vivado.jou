@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2020.1 (64-bit)
-# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Sep 29 19:18:10 2021
-# Process ID: 4624
-# Current directory: P:/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/synth_3
-# Command line: vivado.exe -log booleanEquation_designApproach.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source booleanEquation_designApproach.tcl
-# Log file: P:/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/synth_3/booleanEquation_designApproach.vds
-# Journal file: P:/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/synth_3\vivado.jou
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec  4 13:29:10 2021
+# Process ID: 24364
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/synth_3
+# Command line: vivado.exe -log withStatement_designApproach.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source withStatement_designApproach.tcl
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/synth_3/withStatement_designApproach.vds
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.runs/synth_3\vivado.jou
 #-----------------------------------------------------------
-source booleanEquation_designApproach.tcl -notrace
+source withStatement_designApproach.tcl -notrace

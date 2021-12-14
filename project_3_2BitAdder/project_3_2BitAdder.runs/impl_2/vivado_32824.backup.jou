@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Dec  5 12:24:34 2021
+# Process ID: 32824
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.runs/impl_2
+# Command line: vivado.exe -log TBA_Block_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TBA_Block_wrapper.tcl -notrace
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.runs/impl_2/TBA_Block_wrapper.vdi
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source TBA_Block_wrapper.tcl -notrace

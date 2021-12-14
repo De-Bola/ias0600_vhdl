@@ -49,7 +49,7 @@ signal temp : std_logic_vector(2 downto 0);
 signal counter_1 : integer range 0 to 399999; -- for counter
 signal counter_2 : integer range 0 to 99999999; -- for shift register
 signal output : STD_LOGIC_VECTOR (3 downto 0); -- bcd for 7seg
-signal circular_shift_reg : std_logic_vector(0 to 31) := "00000000000110000100011000000011"; -- the circular shift register to be used
+signal circular_shift_reg : std_logic_vector(0 to 31) := "00000000000000110001001110011010"; -- the circular shift register to be used
 -- the circular shift register is initialized with the value 00184603
 
 begin

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.runs/impl_1/TBA_Source.tcl"
+  variable script "C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.runs/impl_1/TBA_Source.tcl"
   variable category "vivado_impl"
 }
 
@@ -112,23 +112,24 @@ proc step_failed { step } {
   set endFile ".$step.error.rst"
   set ch [open $endFile w]
   close $ch
+OPTRACE "impl_1" END { }
 }
 
 
-OPTRACE "Implementation" START { ROLLUP_1 }
+OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
 OPTRACE "write_bitstream setup" START { }
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 4
   open_checkpoint TBA_Source_routed.dcp
-  set_property webtalk.parent_dir P:/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/wt [current_project]
+  set_property webtalk.parent_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/project_3_2BitAdder.cache/wt} [current_project]
 set_property TOP TBA_Source [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force TBA_Source.mmi }
+  catch { write_mem_info -force -no_partial_mmi TBA_Source.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
   write_bitstream -force TBA_Source.bit 
@@ -150,4 +151,4 @@ if {$rc} {
 
 OPTRACE "write_bitstream misc" END { }
 OPTRACE "Phase: Write Bitstream" END { }
-OPTRACE "Implementation" END { }
+OPTRACE "impl_1" END { }

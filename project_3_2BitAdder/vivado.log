@@ -2,10 +2,10 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue Nov 16 15:38:46 2021
-# Process ID: 9420
+# Start of session at: Sun Dec  5 13:30:52 2021
+# Process ID: 11476
 # Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24032 C:\Users\bhumm\OneDrive - TalTech\IAS0600_VHDL\project_3_2BitAdder\project_3_2BitAdder.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30140 C:\Users\bhumm\OneDrive - TalTech\IAS0600_VHDL\project_3_2BitAdder\project_3_2BitAdder.xpr
 # Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder/vivado.log
 # Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdder\vivado.jou
 #-----------------------------------------------------------
@@ -16,17 +16,63 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
-open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:09 . Memory (MB): peak = 1134.625 ; gain = 0.730
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1136.207 ; gain = 0.000
 update_compile_order -fileset sources_1
-open_project {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_CreepingLine/project_3_CreepingLine.xpr}
-WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_CreepingLine/project_3_CreepingLine.gen/sources_1'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  5 13:33:33 2021...
+_2BitAdderArc.xpr.zip} -temp_dir {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL} -force -exclude_run_results
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL' for archiving project
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
-update_compile_order -fileset sources_1
-current_project project_3_2BitAdder
-close_project
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+WARNING: [IP_Flow 19-3571] IP 'FA_Block_inst_0_HA_source_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-3571] IP 'FA_Block_inst_0_HA_source_1_0' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-3571] IP 'FA_Block_inst_0_HA_source_2_0' is restricted:
+* Module reference is stale and needs refreshing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+WARNING: [Coretcl 2-105] Run 'synth_2' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_2'...
+WARNING: [Coretcl 2-105] Run 'FA_Block_inst_0_HA_source_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'FA_Block_inst_0_HA_source_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'FA_Block_inst_0_HA_source_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'FA_Block_inst_0_HA_source_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'FA_Block_inst_0_HA_source_2_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'FA_Block_inst_0_HA_source_2_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'TBA_Block_HA_source_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'TBA_Block_HA_source_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_2'...
+INFO: [Coretcl 2-133] re-setting run 'FA_Block_inst_0_HA_source_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'FA_Block_inst_0_HA_source_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'FA_Block_inst_0_HA_source_2_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'TBA_Block_HA_source_0_0_impl_1'...
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/project_3_2BitAdderArc.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 1135.457 ; gain = 0.000
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 16 18:40:53 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  5 13:33:07 2021...

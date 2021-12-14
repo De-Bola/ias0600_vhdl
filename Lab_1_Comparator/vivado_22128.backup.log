@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec  4 14:03:11 2021
+# Process ID: 22128
+# Current directory: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25976 C:\Users\bhumm\OneDrive - TalTech\IAS0600_VHDL\Lab_1_Comparator\Lab_1_Comparator.xpr
+# Log file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/vivado.log
+# Journal file: C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/bhumm/OneDrive - TalTech/IAS0600_VHDL/Lab_1_Comparator/Lab_1_Comparator.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+open_run impl_3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.750 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1888.910 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1888.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2049.812 ; gain = 914.852
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  4 15:34:22 2021...

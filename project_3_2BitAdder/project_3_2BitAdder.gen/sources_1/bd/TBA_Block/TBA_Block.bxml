@@ -2,10 +2,72 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="TBA_Block" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1633534942"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1633534942"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1633534942"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1633534942"/>
-    <FileCollection Name="SOURCES" Type="SOURCES"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1638697790"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1638697790"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1638697790"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1638697790"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="synth\TBA_Block.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim\TBA_Block.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="TBA_Block_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff\TBA_Block.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="TBA_Block.bda">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff\TBA_Block_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth\TBA_Block.hwdef">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim\TBA_Block.protoinst">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+    <BlockContainerCollection>
+      <BlockContainer InstPath="/FA_Block_0" IsPR="false" State="Generated">
+        <ActiveVariantSynth FileName="bd\FA_Block_inst_0\FA_Block_inst_0.bd"/>
+        <ActiveVariantSim FileName="bd\FA_Block_inst_0\FA_Block_inst_0.bd"/>
+        <VariantsCollection>
+          <BDFile BDFilePath="bd\FA_Block_inst_0\FA_Block_inst_0.bd" BDFileset="FA_Block_inst_0" BDSourceFile="..\..\..\..\project_3_2BitAdder.srcs\sources_1\bd\FA_Block\FA_Block.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+        </VariantsCollection>
+      </BlockContainer>
+    </BlockContainerCollection>
+    <ReferenceCollection>
+      <ModuleReference TargetName="FA_Block" Type="Block Design" SubInstancePath="TBA_Block_FA_Block_0">
+        <TopFile Name="..\..\..\..\project_3_2BitAdder.srcs\sources_1\bd\FA_Block\FA_Block.bd"/>
+        <FileCollection>
+          <File Name="..\..\..\..\project_3_2BitAdder.srcs\sources_1\imports\Lab 2 Source files\HA_source.vhd"/>
+          <File Name="..\..\..\..\project_3_2BitAdder.srcs\sources_1\bd\FA_Block\FA_Block.bd"/>
+        </FileCollection>
+      </ModuleReference>
+    </ReferenceCollection>
   </CompositeFile>
 </Root>
